@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/db_carSalesApp</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="testdb" uuid="1b477d5b-2835-42e0-83a4-f6b6d7d0cc0d">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:testdb</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
