@@ -2,11 +2,14 @@ package ru.korovin.carSalesApp.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
+import lombok.*;
 
 import java.util.List;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 
 @Entity
 @Table
@@ -19,6 +22,6 @@ public class Customer {
     private String firstName;
     private String phoneNumber;
 
-    @OneToMany(mappedBy = "customer")
-    private List<Order> orders;
+//    @OneToMany(mappedBy = "customer")
+//    private List<Order> orders;
 }

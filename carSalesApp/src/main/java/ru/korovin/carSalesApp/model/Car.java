@@ -3,11 +3,11 @@ package ru.korovin.carSalesApp.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
+import lombok.*;
 
 import java.util.List;
 
-@Data
+@AllArgsConstructor @NoArgsConstructor @Getter @Setter
 
 @Entity
 @Table
@@ -19,8 +19,8 @@ public class Car {
     @NotNull(message = "Car model may not be null")
     private String carModel;
 
-    @OneToMany(mappedBy = "car")
-    private List<Order> orders;
+//    @OneToMany(mappedBy = "car")
+//    private List<Order> orders;
 
 
 }
